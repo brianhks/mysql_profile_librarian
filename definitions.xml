@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<definitions xmlns="http://www.cpmake.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<definition name="puppet-lint" command="puppet-lint">
+		<option name="fail-on-warnings">--fail-on-warnings</option>
+		<option name="manifest" pattern="(.+)">$1</option>
+	</definition>
+
+	<!-- ======================================================================= -->
+	<definition name="linux-notify" command="notify-send">
+		<option name="title" pattern="(.+)">"$1"</option>
+		<option name="message" pattern="(.+)">"$1"</option>
+	</definition>
+	
+	<definition name="mac-notify" command="osascript">
+		<option>-e "display notification</option>
+		<option name="message" pattern="(.+)">\\"$1\\"</option>
+		<option name="title" pattern="(.+)">with title \\"$1\\"</option>
+		<option>"</option>
+	</definition>
+
+	<definition name="r10k-install" command="bundle exec r10k">
+		<option>puppetfile install</option>
+		<option name="moduledir" pattern="(.+)">--moduledir "$1"</option>
+		<option name="puppetfile" pattern="(.+)">--puppetfile "$1"</option>
+	</definition>
+
+	<definition name="librarian-puppet" command="librarian-puppet">
+		<option name="install">install</option>
+		<option>--no-use-v1-api --verbose</option>
+		<option name="path" pattern="(.+)">--path "$1"</option>
+	</definition>
+
+</definitions>

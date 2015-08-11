@@ -1,2 +1,2 @@
-# mysql_profile_librarian
-Puppet module using librarian
+# nexus_puppet_deployer
+Deploys individual puppet modules into a nexus repository

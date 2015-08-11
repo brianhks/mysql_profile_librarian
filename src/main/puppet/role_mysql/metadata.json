@@ -1,0 +1,19 @@
+{
+  "name": "agileclick-role_mysql",
+  "version": "0.3.0",
+  "source": "https://github.com/brianhks/puppet_mysql_profile",
+  "author": "Brian Hawkins",
+  "license": "Apache 2.0",
+  "summary": "Profile for installing Cassandra",
+  "description": "Profile for installing Cassandra",
+  "project_page": "https://github.com/brianhks/puppet_mysql_profile",
+  "dependencies": [
+    {
+      "name": "agileclick/profile_mysql",
+      "version_requirement": "0.3.0"
+    }
+  ],
+  "types": [
+
+  ]
+}

@@ -1,0 +1,13 @@
+
+<ivy-module version="2.0">
+	<info organisation="proofpoint" module="role_mysql"/>
+	<configurations defaultconf="default" >
+		<conf name="default"/>
+		<conf name="integration" extends="test"/>
+		<conf name="test" extends="default"/>
+	</configurations>
+	<dependencies>
+
+
+	</dependencies>
+</ivy-module>

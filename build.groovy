@@ -62,7 +62,7 @@ packageTarRule = new TarRule("${buildDir}/${projectName}_v${projectVersion}.tar"
 		.addFileSet(new RegExFileSet(modulesDir, ".*").recurse())
 		.addFileSet(new RegExFileSet(libDir, ".*").recurse())
 		.addDepend(buildDirRule)
-		.addDepend("retrieve-all")
+		.addDepend("resolve")
 
 packageGzipRule = new GZipRule("package").setSource(packageTarRule.getTarget())
 		.setDescription("Package all modules and dependencies into one artifact.")

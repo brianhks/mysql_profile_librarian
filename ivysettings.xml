@@ -1,11 +1,11 @@
 <ivysettings>
 	<settings defaultResolver="default"/>
 
-	<credentials host="vm-server"
+	<credentials host="nexus"
 	             realm="Sonatype Nexus Repository Manager"
-	             username="deployment" passwd="deployme"/>
+	             username="admin" passwd="admin123"/>
 	
-	<property name="nexus-releases" value="http://vm-server:8081/nexus/content/repositories/puppet"/>
+	<property name="nexus-releases" value="http://nexus:8081/nexus/content/repositories/puppet"/>
 	
 	<resolvers>
 		<url name="puppet-forge">

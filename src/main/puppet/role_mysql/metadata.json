@@ -1,6 +1,6 @@
 {
   "name": "agileclick-role_mysql",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "source": "https://github.com/brianhks/puppet_mysql_profile",
   "author": "Brian Hawkins",
   "license": "Apache 2.0",
@@ -10,7 +10,7 @@
   "dependencies": [
     {
       "name": "agileclick/profile_mysql",
-      "version_requirement": "0.3.0"
+      "version_requirement": "0.1.0"
     }
   ],
   "types": [

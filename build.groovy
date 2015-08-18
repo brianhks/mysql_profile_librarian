@@ -48,11 +48,6 @@ def doResolve(Rule rule)
 	librarianDef.set("path", libDir)
 
 	saw.exec(librarianDef.getCommand())
-	/*r10kDef = saw.getDefinition("r10k-install")
-	r10kDef.set("moduledir", new File(libDir).getAbsolutePath())
-	r10kDef.set("puppetfile", new File("Puppetfile").getAbsolutePath())
-
-	saw.exec("/home/bhawkins/work/r10k", r10kDef.getCommand(), true);*/
 }
 
 
